@@ -4,6 +4,7 @@ WORKDIR /app/backend
 
 COPY requirements.txt /app/backend
 
+RUN pip install mysqlclient
 RUN pip install -r requirements.txt
 
 COPY . /app/backend
